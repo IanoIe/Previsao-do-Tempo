@@ -4,21 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, ">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <title>DevClub - Previsão do Tempo</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
   </head>
 
   <body>
-    <div>
-      <input placeholder="Digite o nome da cidade">
-      <button>Buscar</button>
 
-      <h2>Tempo em São Paulo</h2>
+    <div class="caixa-maior">
+      <input class="input-cidade" placeholder="Digite o nome da cidade">
+      <button class="botao-busca">
+        <img class="img-busca" alt="busca" src="https://www.svgrepo.com/show/488200/find.svg">
+      </button>
 
-      <p>21ºC</p>
+      <div class="caixa-media">
+        <h2 class="cidade">Tempo em São Paulo</h2>
+        <p class="temp">21ºC</p>
 
-      <img alt="icone-info-tempo" src="https://openweathermap.org/img/wn/04n.png"> <p>Nublado</p>
+        <div class="caixa-menor">
+          <img class="img-previsao" alt="icone-info-tempo" src="https://openweathermap.org/img/wn/04n.png"> 
+          <p class="texto-previsao">Nublado</p>
+        </div>
 
-      <p>Humidade: 76%</p>
+        <p class="humidade">Humidade: 76%</p>
+      </div>
     </div>
+
   </body>
 </html>
